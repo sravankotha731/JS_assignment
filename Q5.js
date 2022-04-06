@@ -1,13 +1,13 @@
 /*Write a JavaScript program to create a new string adding "Py" in front of a given string. 
 If the given string begins with "Py" then return the original string. */
 
-function add_string(str){
+function add_string(){
+    let str = document.getElementById("Q5").value;
     let str1 = str.toLowerCase()
     if(str1.substring(0,2)==="py"){
-        return str
+        document.getElementById("A5").innerHTML = str
     }
     else{
-        return "Py"+str
+        document.getElementById("A5").innerHTML = "Py"+str
     }
 }
-console.log(add_string("pipe"))
